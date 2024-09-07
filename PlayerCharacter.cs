@@ -37,6 +37,23 @@ public class PlayerCharacter
     }
     public string Equipment
     {
+        get
+        {
+            // This allows me to output the list of equipment with a unique delimiter based on need of where it is being called.
+            string? list = null;
+            for (int i = 0; i < this._equipment.Count(); i++)
+            {
+                if (list == null)
+                {
+                    list = this._equipment[i];
+                }
+                else
+                {
+                    list += "|" + this._equipment[i];
+                }
+            };
+            return list;
+        }
         set {
             List<string>? equip = new List<string>();
             equip = value.Split("|").ToList();

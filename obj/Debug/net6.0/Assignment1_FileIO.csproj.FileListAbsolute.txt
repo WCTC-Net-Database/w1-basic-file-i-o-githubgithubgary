@@ -16,3 +16,4 @@ C:\Users\User\source\repos\Assignment1_FileIO\Assignment1_FileIO\obj\Debug\net6.
 C:\Users\User\source\repos\Assignment1_FileIO\Assignment1_FileIO\bin\Debug\net6.0\CsvHelper.dll
 C:\Users\User\source\repos\Assignment1_FileIO\Assignment1_FileIO\obj\Debug\net6.0\Assignme.E0770D7A.Up2Date
 C:\Users\User\source\repos\Assignment1_FileIO\Assignment1_FileIO\bin\Debug\net6.0\input.csv
+C:\Users\User\source\repos\Assignment1_FileIO\Assignment1_FileIO\obj\Debug\net6.0\Assignment1_FileIO.sourcelink.json

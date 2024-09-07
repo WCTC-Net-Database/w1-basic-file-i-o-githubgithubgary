@@ -177,7 +177,7 @@ namespace GWJ_Assignement1_FileIO;
             Console.WriteLine(str);
         }
     }
-    static List<PlayerCharacter> GetCharacters()
+    public static List<PlayerCharacter> GetCharacters()
     {
         List<PlayerCharacter> pc_list = new List<PlayerCharacter>();
 
@@ -206,6 +206,16 @@ namespace GWJ_Assignement1_FileIO;
             pc_list = records;
         }
         return pc_list;
+    }
+    public static void UpdateCharacters(List<PlayerCharacter> updatedcampaign)
+    {
+        string? path = Directory.GetCurrentDirectory();
+
+        using (var writer = new StreamWriter(path + "\\input.csv"))
+        using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
+        {
+            csv.WriteRecords(updatedcampaign);
+        }
     }
     public static void ListCharacters(List<PlayerCharacter> tmpPlayerCharacter)
     {
@@ -305,7 +315,7 @@ namespace GWJ_Assignement1_FileIO;
         List<PlayerCharacter> campaignList = new List<PlayerCharacter>();
 
         campaignList = GetCharacters();
-
+     
         while (EndProg != true)
         {
             ret_val = DisplayMenu();
@@ -328,6 +338,7 @@ namespace GWJ_Assignement1_FileIO;
                     break;
                 case "0":
                     // Leave the program
+                    UpdateCharacters(campaignList);
                     Console.WriteLine("\r\n\r\\nExiting...");
                     Console.Clear();
                     EndProg = true;
