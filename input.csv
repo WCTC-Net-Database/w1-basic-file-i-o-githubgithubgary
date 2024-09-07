@@ -1,0 +1,7 @@
+﻿Name,Class,Level,HP,Equipment
+"John,Brave",Fighter,1,10,sword|shield|potion
+Jane,Wizard,2,6,staff|robe|book
+"Bob,Sneaky",Rogue,3,8,dagger|lockpick|cloak
+Alice,Cleric,4,12,mace|armor|potion
+"Reginald III",Sir Knight,5,20,sword|armor|horse
+Bob,Builder,5,20,safety helmet|hammer|nails|saw|goggles
